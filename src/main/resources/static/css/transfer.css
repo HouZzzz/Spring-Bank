@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;800;900&family=Poppins:ital,wght@0,300;1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+    transform: scale(120%);
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #1d2b3a;
+}
+
+.inputBox {
+    position: relative;
+    width: 250px;
+    margin: 40px;
+
+
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: .5s;
+
+
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0%;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.inputBox input:valid ~ span, .inputBox input:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.6em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:focus, .inputBox input:valid {
+    border: 1px solid #00dfc4;
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    padding: 6px;
+    font-size: 1em;
+    letter-spacing: 2px;
+    background: #1d2b3a;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    transition: .5s;
+}
+
+button:hover {
+    color: #00dfc4;
+    border: 1px solid #00dfc4;
+    letter-spacing: 12px;
+    padding-left: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 0 9px #00dfc4, 0 0 25px #00dfc4, 0 0 50px #00dfc4;
+
+}
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    padding: 10px;
+    transition: .5s;
+
+}
+
+a:hover {
+    color: #00dfc4;
+    border: 1px solid #00dfc4;
+    letter-spacing: 9px;
+    padding-left: 30px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 0 5px #00dfc4, 0 0 35px #00dfc4, 0 0 70px #00dfc4;
+}

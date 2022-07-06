@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Перевод</title>
+        <link th:href="@{/css/transfer.css}" rel="stylesheet" />
+    </head>
+    <body>
+    <form method="post">
+        <div class="inputBox">
+            <input type="text" name="cardNumber" required="required">
+            <span>Номер карты</span>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="summ" required="required">
+            <span>Сумма для перевода</span>
+            <button class="btn" type="submit">Отправить</button>
+        </div>
+    </form>
+    </body>
+</html>

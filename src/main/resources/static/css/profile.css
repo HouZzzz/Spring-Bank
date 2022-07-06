@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+
+body {
+    background: #091b17;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(0.85turn, #000, #222, #000);
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+    text-transform: lowercase;
+
+}
+
+.cvcAndTerm {
+    margin-top: 80px;
+    padding: 0;
+}
+.term {
+    float: left;
+    padding-left: 50px;
+    transition: .5s;
+}
+.cvc {
+    float: right;
+    padding-right: 50px;
+    transition: .5s;
+}
+.cardNumber {
+    margin-right: auto;
+    margin-left: auto;
+    transition: .5s;
+    font-size: .9em;
+}
+
+.cvc::before {
+    content: attr(data-text);
+    position: absolute;
+    color: rgba(255, 255, 255, .25);
+    font-size: .6em;
+    transform: translateY(-20px);
+    transition: .5s;
+
+}
+
+.term::before {
+    content: attr(data-text);
+    position: absolute;
+    color: rgba(255, 255, 255, .25);
+    font-size: .6em;
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+.cardNumber::before {
+    content: attr(data-text);
+    position: absolute;
+    color: rgba(255, 255, 255, .25);
+    font-size: .6em;
+    transform: translateY(-20px);
+    transition: .5s;
+    
+
+}
+
+.card:hover {
+    letter-spacing: 3px;
+    
+
+}
+
+.cardNumber:hover::before {
+    color: #00dfc4;
+    text-shadow: 0 0 10px #00dfc4, 0 0 30px #00dfc4, 0 0 80px #00dfc4;
+}
+
+.cvc:hover::before {
+    color: #00dfc4;
+    text-shadow: 0 0 10px #00dfc4, 0 0 30px #00dfc4, 0 0 80px #00dfc4;
+}
+.term:hover::before {
+    color: #00dfc4;
+    text-shadow: 0 0 10px #00dfc4, 0 0 30px #00dfc4, 0 0 80px #00dfc4;
+}
+
+.stats {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(0.85turn, #000, rgb(17, 17, 17), #000);
+    color: white;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px dotted #00dfc4;
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+    font-size: 1.8em;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    
+}
+.fullname {
+    font-size: 0.9em;
+}
+
+.money::before {
+    content: attr(data-text);
+    position: absolute;
+    color: rgba(255, 255, 255, .25);
+    font-size: .6em;
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+.fullname::before {
+    content: attr(data-text);
+    position: absolute;
+    color: rgba(255, 255, 255, .25);
+    font-size: .6em;
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+.stats:hover {
+    box-shadow: 0 0 10px #00dfc4, 0 0 30px #00dfc4, 0 0 80px #00dfc4;
+    transform: scale(1.1);
+    width: 350px;
+    letter-spacing: 6px;
+    border-radius: 20px;
+}
+.money:hover::before {
+    color: #00dfc4;
+    text-shadow: 0 0 10px #00dfc4, 0 0 30px #00dfc4, 0 0 80px #00dfc4;
+}
+
+.fullname:hover::before {
+    color: #00dfc4;
+    text-shadow: 0 0 10px #00dfc4, 0 0 30px #00dfc4, 0 0 80px #00dfc4;
+}

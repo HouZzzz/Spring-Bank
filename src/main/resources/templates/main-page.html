@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Главная страница</title>
+      <link th:href="@{/css/menu.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <section>
+        <ul>
+            <li><a th:href="'/profile/' + ${account}" data-text="профиль">профиль</a></li>
+            <li><a href="/transfer" data-text="перевод">перевод</a></li>
+            <li><a href="/history" data-text="история">история</a></li>
+        </ul>
+    </section>
+  </body>
+</html>

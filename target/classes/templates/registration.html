@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Зарегистрироваться</title>
+    <link th:href="@{/css/login.css}" rel="stylesheet" />
+</head>
+<body>
+<form method="post">
+    <div class="inputBox">
+        <input type="text" name="username" required="required">
+        <span>Имя пользователя</span>
+    </div>
+    <div class="inputBox">
+        <input type="password" name="password" required="required">
+        <span>Пароль</span>
+    </div>
+    <div class="inputBox">
+        <input type="password" name="passwordConfirm" required="required">
+        <span>Подтверждение пароля</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" name="name" required="required">
+        <span>Имя</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" name="surname" required="required">
+        <span>Фамилия</span>
+    </div>
+    <button type="submit">Войти</button>
+</form>
+
+</body>
+</html>
+
+<!--<link th:href="@{/css/login.css}" rel="stylesheet" />-->
+<!--<link rel="stylesheet" href="/src/main/resources/static/css/login.css">-->

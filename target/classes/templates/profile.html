@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Профиль</title>
+        <link th:href="@{/css/profile.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="profile block" th:each="acc : ${account}">
+            
+                <div class="card block">
+                    <b class="cardNumber" data-text="card number" th:text="${acc.cardNumber}"/>
+
+                    <div class="cvcAndTerm">
+                        <b class="term" data-text="term" th:text="${acc.cardTerm}"/>
+                        <b class="cvc" data-text="cvc" th:text="${acc.cvc}"/>
+                    </div>
+                </div>
+                <div class="stats">
+                    <b class="money" data-text="rubles"th:text="${acc.money}"/>
+                    <br>
+                    <b class="fullname" data-text="name" th:text="${acc.fullname}"/>
+                </div>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>История</title>
+        <link th:href="@{/css/history.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="sendedBlock">
+            <div class="sended" th:each="ts : ${sendedTransfers}">
+                <b th:text="${ts.getterFullname}"/>
+                <p><b th:text="'-' + ${ts.summSended}"/></p>
+            </div>
+        </div>
+
+        <div class="gettedBlock">
+            <div class="getted" th:each="tg : ${gettedTransfers}">
+                <b th:text="${tg.senderFullname}"/>
+                <p><b th:text="${tg.summSended}"/></p>
+            </div>
+        </div>
+    </body>
+</html>

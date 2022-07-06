@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;800;900&family=Poppins:ital,wght@0,300;1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jura', sans-serif;
+}
+
+body {
+    display: flex;
+    background: #1d2b3a;
+}
+
+.sendedBlock, .gettedBlock {
+    font-size: 2.5em;
+    margin: auto;
+    margin-top: 25px;
+    color: white;
+    width: 550px;
+    background-color: #131b25;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.sended p {    
+    color: #f5295c;
+    transition: .5s;
+}
+
+.getted p {
+    color: #00dfc4;
+    transition: .5s;
+}
+
+.sended, .getted {
+    padding: 20px;
+    
+    
+}
+p {
+    margin-left: 50px;
+    font-size: 1.1em;
+}
+
+.sendedBlock:hover, .gettedBlock:hover {
+    letter-spacing: 4px;
+}
+
+.sendedBlock:hover {
+    box-shadow: 0 0 9px #f5295c, 0 0 25px #f5295c, 0 0 50px #f5295c;
+}
+
+.gettedBlock:hover {
+    box-shadow: 0 0 9px #00dfc4, 0 0 25px #00dfc4, 0 0 50px #00dfc4;
+}
+
+.gettedBlock:hover p {
+    text-shadow: 0 0 9px #00dfc4, 0 0 25px #00dfc4, 0 0 50px #00dfc4;
+}
+
+.sendedBlock:hover p {
+    text-shadow: 0 0 9px #f5295c, 0 0 25px #f5295c, 0 0 50px #f5295c;
+}
